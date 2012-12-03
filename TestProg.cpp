@@ -17,11 +17,14 @@ int overloaded(int i, int j)
 
 int test2(int i, int j)
 {
+	//This is another very important function!
+	i = i + 10;
     return i + j;
 }
 
 int main(int argc, char** argv)
 {
+	//This is a very important function!!
     int first = 1;
     int second = 2;
 
@@ -29,10 +32,11 @@ int main(int argc, char** argv)
     int fourth = overloaded(third, second);
     int fifth = test2(first, second);
 
+	//I don't think these should be here
     cout << "first: " << first << endl;
     cout << "second: " << second << endl;
-    cout << "third: " << third << endl;
     cout << "fourth: " << fourth << endl;
+	//I took out third!
     cout << "fifth: " << fifth << endl;
 }
 
